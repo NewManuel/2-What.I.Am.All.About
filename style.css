@@ -1,0 +1,62 @@
+:root {
+    --headerthemecolor: #99ddff;
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #333;
+    padding: 10px;
+    color: #fff;
+    margin: -11px 0px 4px 0px;
+    padding: 0px 0px 0px 0px;
+}
+
+header h1 {
+    color: grey; 
+    background-color: var(--headerthemecolor);
+    color: #333;
+    font-size: 36px;
+    font-family: Arial, Helvetica, sans-serif;
+    }
+
+h1 {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: x-large;
+    font-weight: unset;
+}
+
+nav {
+    padding: 0px 9px 0px 0px;
+}
+
+nav a {     
+    color: var(--headerthemecolor); 
+}
+.middle-line {
+    position: absolute;
+    left: 50%;
+    height: 100%;
+    border-left: 1px solid black; /* Adjust the color and style as needed */
+  }
+  #am-box1, #w-box1, #cm-box1  {
+    color: #3264a8 ;
+    font-size:  30px;
+    border-right-style: solid;
+    border-right-color: #3264a8;
+    margin-bottom: 26px;
+    /* padding-right: 416px; */
+    text-align: right;
+    padding: 10px;
+  }
+  section {
+    width:  50%;
+  }
+ #contactme { 
+    display: flex;
+}
