@@ -1,6 +1,9 @@
+
+
 :root {
     --headerthemecolor: #99ddff;
 }
+
 body {
     margin: 0;
     padding: 0;
@@ -23,13 +26,13 @@ header h1 {
     color: #333;
     font-size: 36px;
     font-family: Arial, Helvetica, sans-serif;
-    }
+ }
 
 h1 {
     font-family: Helvetica, Arial, sans-serif;
     font-size: x-large;
     font-weight: unset;
-}
+} 
 
 nav {
     padding: 0px 9px 0px 0px;
@@ -38,12 +41,15 @@ nav {
 nav a {     
     color: var(--headerthemecolor); 
 }
+
 .middle-line {
     position: absolute;
     left: 50%;
     height: 100%;
-    border-left: 1px solid black; /* Adjust the color and style as needed */
+    border-left: 1px solid black;
+     /* Adjust the color and style as needed */
   }
+
   #am-box1, #w-box1, #cm-box1  {
     color: #3264a8 ;
     font-size:  30px;
@@ -54,9 +60,11 @@ nav a {
     text-align: right;
     padding: 10px;
   }
+
   section {
     width:  50%;
   }
+
  #contactme { 
     display: flex;
 }
