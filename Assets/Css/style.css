@@ -44,7 +44,7 @@ nav a {
 
 .middle-line {
     position: absolute;
-    left: 50%;
+    left: 25%;
     height: 100%;
     border-left: 1px solid black;
      /* Adjust the color and style as needed */
@@ -52,19 +52,50 @@ nav a {
 
   #am-box1, #w-box1, #cm-box1  {
     color: #3264a8 ;
-    font-size:  30px;
+    font-size:  40px;
+    font-weight: bold;
     border-right-style: solid;
     border-right-color: #3264a8;
     margin-bottom: 26px;
-    /* padding-right: 416px; */
+    padding-right: 416px;
     text-align: right;
     padding: 10px;
+    width: 25%;
   }
 
-  section {
-    width:  50%;
+  #am-box2, #w-box2, #cm-box2{
+    /* color: #3264a8 ; */
+    /* font-size:  30px; */
+    /* border-left-style: solid; */
+    /* border-left-color: #3264a8; */
+    /* margin-bottom: 26px; */
+    padding-left: 416px;
+    text-align: left;
+    padding: 10px;
+    width: 75%;
   }
 
- #contactme { 
+  #aboutme{
     display: flex;
-}
+    color: #3264a8;
+  }
+
+  #am-box2{    
+    display: flex;
+    /* This to use the flexbox property */
+    justify-content: center;
+    /* Horizontally center the content */
+    align-items: center;
+    /* Vertically center the content */
+    height: 250px;
+  }
+
+  #cm-box2{
+    text-align: center;
+    row-gap: 15px;
+  }
+  
+  section {
+    display: flex;
+    flex-direction: row;
+  }
