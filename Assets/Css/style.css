@@ -4,9 +4,10 @@
     --headerthemecolor: #99ddff;
 }
 
-body {
+body {  
     margin: 0;
     padding: 0;
+   /* These propeties are added to take away the distance  from the end of the header*/ 
 }
 
 header {
@@ -42,13 +43,12 @@ nav a {
     color: var(--headerthemecolor); 
 }
 
-.middle-line {
-    position: absolute;
-    left: 25%;
-    height: 100%;
-    border-left: 1px solid black;
-     /* Adjust the color and style as needed */
-  }
+section {
+    display: flex;
+    /* Using the flex properties */
+    flex-direction: row;
+    /*This is to keep everything on the same row*/
+}
 
   #am-box1, #w-box1, #cm-box1  {
     color: #3264a8 ;
@@ -64,11 +64,6 @@ nav a {
   }
 
   #am-box2, #w-box2, #cm-box2{
-    /* color: #3264a8 ; */
-    /* font-size:  30px; */
-    /* border-left-style: solid; */
-    /* border-left-color: #3264a8; */
-    /* margin-bottom: 26px; */
     padding-left: 416px;
     text-align: left;
     padding: 10px;
@@ -77,25 +72,47 @@ nav a {
 
   #aboutme{
     display: flex;
+    /* Here I am using flexbox properties */
     color: #3264a8;
-  }
+    /* Text is colored a shade of blue */
+    height: 300px;
+  } 
 
   #am-box2{    
     display: flex;
     /* This to use the flexbox property */
     justify-content: center;
     /* Horizontally center the content */
-    align-items: center;
+    align-items: start;
     /* Vertically center the content */
-    height: 250px;
+    /* height: 250px; */
+  }
+
+  #work{
+    display: flex;
+  }
+
+  #w-box2{
+    flex-direction: column;
+  }
+
+ #bugphoto{
+    width: 590px;
+    height: auto;
+    padding: 0;
+    border: 10px;
+    border-color: #99ddff;
   }
 
   #cm-box2{
     text-align: center;
+    /* This centers the text  */
     row-gap: 15px;
+    justify-content: space-around;
+    /* An even amout of space around each link in the div for visual appearance */
   }
   
-  section {
-    display: flex;
-    flex-direction: row;
-  }
+#purpleflower, #whiteflower, #dandelion, #thinpetals {
+  max-width: 350px;
+  height: auto;
+}
