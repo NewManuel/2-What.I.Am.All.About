@@ -2,6 +2,15 @@
   --headerthemecolor: #99ddff;
 }
 
+/* Media query for smaller screens */
+/* @media screen and (max-width: 500px) {
+  #main {
+    flex-direction: column;
+    width: 50%; */
+    /* Full width for the container on smaller screens */
+  /* }
+} */
+
 body {
   margin: 0;
   padding: 0;
@@ -15,7 +24,7 @@ header {
   background-color: #333;
   padding: 10px;
   color: #fff;
-  margin: -11px 0px 4px 0px;
+  margin: -11px 0px 0px 0px;
   padding: 0px 0px 0px 0px;
 }
 
@@ -39,6 +48,12 @@ nav {
 
 nav a {
   color: var(--headerthemecolor);
+}
+
+#banner {
+  height: fit-content;
+  width: 100%;
+  margin-bottom: 15px;
 }
 
 section {
@@ -90,39 +105,39 @@ section {
   /* height: 250px; */
 }
 
-#work {
-  display: flex;
-}
-
 #work img {
   border: 5px solid #99ddff;
   /* This creates a blue border around the images in the work container */
 }
 
-#w-box2 {
-  flex-direction: column;
+#w-box2 p {
+  /* this makes the specifically the <p> text musch smaller than the <h3> text */
+  font-size: small;
 }
 
-#bugphoto {
-  width: 390px;
-  height: auto;
+.main-image{
+  display: flex;
+  justify-content: center;
+}
+
+#marketing-repo {
+  width: 560px;
+  height: 350px;
   padding: 0;
 }
 
-#cm-box2 {
-  display: flex;
-  flex-direction: row;  
-  justify-content: space-evenly;
-  /* An even amout of space around each link in the div for visual appearance */
+.sub-image {
+  
 }
 
 #purpleflower,
 #whiteflower,
 #dandelion,
 #thinpetals {
-  max-width: 275px;
+  max-width: 250px;
   height: auto;
-  /* position: relative; */
+  margin: 0;
+  padding: 0;
   transition: transform 0.3s ease-in-out;
   /* Add transition effect */
 }
@@ -149,16 +164,20 @@ section {
   }
 
 .bottom-left {
-  position: absolute;
-  bottom: 50px;
-  left: 50px;
-  margin: 0px;
+  position: relative;
+  bottom: 115px;
+  left: 4px;
+  margin-right: 485px;
   padding: 0px 5px 0px 5px;
   background-color: #99ddff;
   color: #646161;
 }
 
-#w-box2 p {
-  /* this makes the specifically the <p> text musch smaller than the <h3> text */
-  font-size: small;
+#cm-box2 {
+  display: flex;
+  flex-direction: row;  
+  justify-content: space-evenly;
+  /* An even amout of space around each link in the div for visual appearance */
 }
+
+
