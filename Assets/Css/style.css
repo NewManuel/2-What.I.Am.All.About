@@ -110,10 +110,9 @@ section {
 }
 
 #cm-box2 {
-  text-align: center;
-  /* This centers the text  */
-  row-gap: 50%;
-  justify-content: space-around;
+  display: flex;
+  flex-direction: row;  
+  justify-content: space-evenly;
   /* An even amout of space around each link in the div for visual appearance */
 }
 
