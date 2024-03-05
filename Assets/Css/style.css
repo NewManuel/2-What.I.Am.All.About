@@ -1,118 +1,165 @@
-
-
 :root {
-    --headerthemecolor: #99ddff;
+  --headerthemecolor: #99ddff;
 }
 
-body {  
-    margin: 0;
-    padding: 0;
-   /* These propeties are added to take away the distance  from the end of the header*/ 
+body {
+  margin: 0;
+  padding: 0;
+  /* These propeties are added to take away the distance  from the end of the header*/
 }
 
 header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: #333;
-    padding: 10px;
-    color: #fff;
-    margin: -11px 0px 4px 0px;
-    padding: 0px 0px 0px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #333;
+  padding: 10px;
+  color: #fff;
+  margin: -11px 0px 4px 0px;
+  padding: 0px 0px 0px 0px;
 }
 
 header h1 {
-    color: grey; 
-    background-color: var(--headerthemecolor);
-    color: #333;
-    font-size: 36px;
-    font-family: Arial, Helvetica, sans-serif;
- }
-
-h1 {
-    font-family: Helvetica, Arial, sans-serif;
-    font-size: x-large;
-    font-weight: unset;
-} 
-
-nav {
-    padding: 0px 9px 0px 0px;
+  color: grey;
+  background-color: var(--headerthemecolor);
+  color: #333;
+  font-size: 36px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-nav a {     
-    color: var(--headerthemecolor); 
+h1 {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: x-large;
+  font-weight: unset;
+}
+
+nav {
+  padding: 0px 9px 0px 0px;
+}
+
+nav a {
+  color: var(--headerthemecolor);
 }
 
 section {
-    display: flex;
-    /* Using the flex properties */
-    flex-direction: row;
-    /*This is to keep everything on the same row*/
+  display: flex;
+  /* Using the flex properties */
+  flex-direction: row;
+  /*This is to keep everything on the same row*/
 }
 
-  #am-box1, #w-box1, #cm-box1  {
-    color: #3264a8 ;
-    font-size:  40px;
-    font-weight: bold;
-    border-right-style: solid;
-    border-right-color: #3264a8;
-    margin-bottom: 26px;
-    padding-right: 416px;
-    text-align: right;
-    padding: 10px;
-    width: 25%;
-  }
+#am-box1,
+#w-box1,
+#cm-box1 {
+  color: #3264a8;
+  font-size: 40px;
+  font-weight: bold;
+  border-right-style: solid;
+  border-right-color: #3264a8;
+  margin-bottom: 26px;
+  padding-right: 416px;
+  text-align: right;
+  padding: 10px;
+  width: 25%;
+}
 
-  #am-box2, #w-box2, #cm-box2{
-    padding-left: 416px;
-    text-align: left;
-    padding: 10px;
-    width: 75%;
-  }
+#am-box2,
+#w-box2,
+#cm-box2 {
+  padding-left: 416px;
+  text-align: left;
+  padding: 10px;
+  width: 75%;
+}
 
-  #aboutme{
-    display: flex;
-    /* Here I am using flexbox properties */
-    color: #3264a8;
-    /* Text is colored a shade of blue */
-    height: 300px;
-  } 
+#aboutme {
+  display: flex;
+  /* Here I am using flexbox properties */
+  color: #3264a8;
+  /* Text is colored a shade of blue */
+  height: 300px;
+}
 
-  #am-box2{    
-    display: flex;
-    /* This to use the flexbox property */
-    justify-content: center;
-    /* Horizontally center the content */
-    align-items: start;
-    /* Vertically center the content */
-    /* height: 250px; */
-  }
+#am-box2 {
+  display: flex;
+  /* This to use the flexbox property */
+  justify-content: center;
+  /* Horizontally center the content */
+  align-items: start;
+  /* Vertically center the content */
+  /* height: 250px; */
+}
 
-  #work{
-    display: flex;
-  }
+#work {
+  display: flex;
+}
 
-  #w-box2{
-    flex-direction: column;
-  }
+#work img {
+  border: 5px solid #99ddff;
+  /* This creates a blue border around the images in the work container */
+}
 
- #bugphoto{
-    width: 590px;
-    height: auto;
-    padding: 0;
-    border: 10px;
-    border-color: #99ddff;
-  }
+#w-box2 {
+  flex-direction: column;
+}
 
-  #cm-box2{
-    text-align: center;
-    /* This centers the text  */
-    row-gap: 15px;
-    justify-content: space-around;
-    /* An even amout of space around each link in the div for visual appearance */
-  }
-  
-#purpleflower, #whiteflower, #dandelion, #thinpetals {
-  max-width: 350px;
+#bugphoto {
+  width: 390px;
   height: auto;
+  padding: 0;
+}
+
+#cm-box2 {
+  text-align: center;
+  /* This centers the text  */
+  row-gap: 50%;
+  justify-content: space-around;
+  /* An even amout of space around each link in the div for visual appearance */
+}
+
+#purpleflower,
+#whiteflower,
+#dandelion,
+#thinpetals {
+  max-width: 275px;
+  height: auto;
+  /* position: relative; */
+  transition: transform 0.3s ease-in-out;
+  /* Add transition effect */
+}
+
+#bugphoto:hover {
+   opacity: 0.7;
+   /* this changes the  view when hovering over the picture */
+ }
+#purpleflower:hover {
+  opacity: 0.7;
+  /* this changes the  view when hovering over the picture */
+}
+#whiteflower:hover {
+  opacity: 0.7;
+  /* this changes the  view when hovering over the picture */
+}
+#dandelion:hover {
+  opacity: 0.7;
+  /* this changes the  view when hovering over the picture */
+}
+#thinpetals:hover {
+  opacity: 0.7;
+  /* this changes the  view when hovering over the picture */
+  }
+
+.bottom-left {
+  position: absolute;
+  bottom: 50px;
+  left: 50px;
+  margin: 0px;
+  padding: 0px 5px 0px 5px;
+  background-color: #99ddff;
+  color: #646161;
+}
+
+#w-box2 p {
+  /* this makes the specifically the <p> text musch smaller than the <h3> text */
+  font-size: small;
 }
