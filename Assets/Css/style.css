@@ -7,8 +7,8 @@
   #main {
     flex-direction: column;
     width: 50%; */
-    /* Full width for the container on smaller screens */
-  /* }
+/* Full width for the container on smaller screens */
+/* }
 } */
 
 body {
@@ -66,11 +66,12 @@ section {
 #am-box1,
 #w-box1,
 #cm-box1 {
+  /* These container only hold text, with a line created byt the border-right style */
   color: #3264a8;
   font-size: 40px;
   font-weight: bold;
-  border-right-style: solid;
-  border-right-color: #3264a8;
+  /* border-right-style: solid;
+  border-right-color: #3264a8; */
   margin-bottom: 26px;
   padding-right: 416px;
   text-align: right;
@@ -81,10 +82,14 @@ section {
 #am-box2,
 #w-box2,
 #cm-box2 {
+  /* This gives these containers 3-quarters of the page since it carries the content */
   padding-left: 416px;
   text-align: left;
   padding: 10px;
   width: 75%;
+  border-left: 5px;
+  border-left-style: solid;
+  border-left-color: #3264a8;
 }
 
 #aboutme {
@@ -93,6 +98,7 @@ section {
   color: #3264a8;
   /* Text is colored a shade of blue */
   height: 300px;
+  margin-bottom: 80px;
 }
 
 #am-box2 {
@@ -103,66 +109,51 @@ section {
   align-items: start;
   /* Vertically center the content */
   /* height: 250px; */
+  font-size: 30px;
+
+}
+
+#work {
+  margin-bottom: 80px;
 }
 
 #work img {
   border: 5px solid #99ddff;
   /* This creates a blue border around the images in the work container */
+
 }
 
-#w-box2 p {
-  /* this makes the specifically the <p> text musch smaller than the <h3> text */
-  font-size: small;
-}
-
-.main-image{
+.main-image {
   display: flex;
   justify-content: center;
 }
 
 #marketing-repo {
-  width: 560px;
-  height: 350px;
+  width: 1000px;
+  height: 500px;
   padding: 0;
 }
 
-.sub-image {
-  
+#marketing-repo:hover {
+  opacity: 0.7;
+  /* this changes the  view when hovering over the picture */
 }
 
-#purpleflower,
-#whiteflower,
-#dandelion,
-#thinpetals {
-  max-width: 250px;
-  height: auto;
+.simage img {
+  width: 495px;
+  height: 495px;
   margin: 0;
   padding: 0;
-  transition: transform 0.3s ease-in-out;
-  /* Add transition effect */
 }
 
-#bugphoto:hover {
-   opacity: 0.7;
-   /* this changes the  view when hovering over the picture */
- }
-#purpleflower:hover {
-  opacity: 0.7;
-  /* this changes the  view when hovering over the picture */
+.secondary-images {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 96px;
 }
-#whiteflower:hover {
-  opacity: 0.7;
-  /* this changes the  view when hovering over the picture */
-}
-#dandelion:hover {
-  opacity: 0.7;
-  /* this changes the  view when hovering over the picture */
-}
-#thinpetals:hover {
-  opacity: 0.7;
-  /* this changes the  view when hovering over the picture */
-  }
 
+/* This style is for the labeleling of the images in the work section */
 .bottom-left {
   position: relative;
   bottom: 115px;
@@ -173,11 +164,31 @@ section {
   color: #646161;
 }
 
+/* This media query changes the size of images once the screen size breaks past 1200px*/
+@media screen and (max-width: 1200px) {
+  #am-box2 {
+    font-size: 20px;
+  }
+
+  .simage img {
+    width: 200px;
+    height: 200px;
+
+  }
+
+  #marketing-repo {
+    width: 600px;
+    height: 300px;
+  }
+}
+
+#contactme {
+  margin-bottom: 10px;
+}
+
 #cm-box2 {
   display: flex;
-  flex-direction: row;  
+  flex-direction: row;
   justify-content: space-evenly;
   /* An even amout of space around each link in the div for visual appearance */
 }
-
-
