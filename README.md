@@ -31,7 +31,7 @@ THEN that project image should be larger in size than the others
 WHEN clicking on the images of the project (applications)
 THEN the webpage is taken to that deployed project (application)
 WHEN resizing the page or view the site on various screens and devices
-THEN I am presented with a responsive layout that adapts to my viewport
+THEN what is presented is a responsive layout that adapts to my viewport
 ```
 ### Wireframe
 
