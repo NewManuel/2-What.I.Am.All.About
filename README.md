@@ -19,35 +19,31 @@ SO THAT the EMPLOYER can review samples of my work and assess whether I am a goo
 Here are the critical requirements necessary to develop a portfolio that satisfies a typical hiring manager’s needs:
 
 ```
-GIVEN I need to sample a potential employee's previous work
-WHEN I load their portfolio
-THEN I am presented with the developer's name, a recent photo or avatar, and links to sections about them, their work, and how to contact them
-WHEN I click one of the links in the navigation
+GIVEN I need to show a potential Employer previous work
+WHEN my portfollio loads
+THEN my name is presented and a recent photo of my repo, and links to sections about me, my work, and how to contact me
+WHEN one of the links in the navigation is clicked
 THEN the UI scrolls to the corresponding section
-WHEN I click on the link to the section about their work
-THEN the UI scrolls to a section with titled images of the developer's applications
-WHEN I am presented with the developer's first application
-THEN that application's image should be larger in size than the others
+WHEN the link to the section about my work is clicked 
+THEN the UI scrolls to a section with titled images of the my Github repoistory
+WHEN the scroll to the first image of my project (Github repoistory) 
+THEN that project image should be larger in size than the others
 WHEN I click on the images of the applications
 THEN I am taken to that deployed application
 WHEN I resize the page or view the site on various screens and devices
 THEN I am presented with a responsive layout that adapts to my viewport
 ```
-
-
-## Mock-Up (DELETE)
-
-The following animation shows the web application's appearance and functionality:
-
-![portfolio demo](./Assets/02-advanced-css-homework-demo.gif)
-
-
+![Wireframe](./Assets/Images/Wireframe.jpg)
 
 ### Contact Links
-* Github - Repository contains quality readme with description, screenshot, link to deployed application.
-* Resume - with Employment history and certification
 
-## Wireframe
+```
+
+* Github - Repository contains quality readme with description, screenshot, link to deployed application.
+*Twitter
+* Resume - with Employment history and certification
+```
+
 
 
 
