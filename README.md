@@ -28,9 +28,9 @@ WHEN the link to the section about my work is clicked
 THEN the UI scrolls to a section with titled images of the my Github repoistory
 WHEN the scroll to the first image of my project (Github repoistory) 
 THEN that project image should be larger in size than the others
-WHEN I click on the images of the applications
-THEN I am taken to that deployed application
-WHEN I resize the page or view the site on various screens and devices
+WHEN clicking on the images of the project (applications)
+THEN the webpage is taken to that deployed project (application)
+WHEN resizing the page or view the site on various screens and devices
 THEN I am presented with a responsive layout that adapts to my viewport
 ```
 ### Wireframe
@@ -44,7 +44,6 @@ THEN I am presented with a responsive layout that adapts to my viewport
 ### Contact Links
 
 ```
-
 * Github - Repository contains quality readme with description, screenshot, link to deployed application.
 *Twitter
 * Resume - with Employment history and certification
