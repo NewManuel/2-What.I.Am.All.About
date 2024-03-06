@@ -39,7 +39,7 @@ THEN I am presented with a responsive layout that adapts to my viewport
 
 ### Screenshot
 
-![Screenshot]()
+![Screenshot](./Assets/Images/Webpage-Screenshot.png)
 
 ### Contact Links
 
